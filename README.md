@@ -1,4 +1,4 @@
-Video Tracking algorithm using Mean Shift
+# Video Tracking algorithm using Mean Shift
 
 Steps for execution - 
 
