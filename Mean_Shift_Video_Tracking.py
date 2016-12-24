@@ -116,7 +116,7 @@ def quantizeImage(centroids,
     return centers_idx
 
 
-def colorQuantizationTry(img,
+def colorQuantization(img,
         numColors):
     w, h, d = tuple(img.shape)
     assert d == 3
@@ -329,7 +329,7 @@ def main():
     print "shape of ROI - ", np.shape(roiProperties['roi'])
     print "shape of Kernel - ", np.shape(myKernel['k'])
     print "Performing K-Means on the image"
-    kmeansCentroid = colorQuantizationTry(img.astype(float),
+    kmeansCentroid = colorQuantization(img.astype(float),
         64)
     cmap = kmeansCentroid
     Lmap = len(cmap) + 1;
