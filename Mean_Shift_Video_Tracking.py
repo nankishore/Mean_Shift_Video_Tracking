@@ -213,7 +213,7 @@ def similarityFunction(
     f = float(f) / (H*W)
     return [f, w]
 
-def performMeanshitTracking(
+def performMeanShiftTracking(
         x0, y0, f,
         f_indx, loss,
         q, I2, Lmap,
@@ -361,7 +361,7 @@ def main():
         H, W, D = np.shape(nextFrame)
         nextIndexedFrame = quantizeImage(cmap,
             nextFrame)
-        [nX, nY, LOSS_VAL, f, F_INDEX] = performMeanshitTracking(refX, refY, f, F_INDEX, LOSS_VAL,
+        [nX, nY, LOSS_VAL, f, F_INDEX] = performMeanShiftTracking(refX, refY, f, F_INDEX, LOSS_VAL,
                                                                  q, nextIndexedFrame, Lmap, H,
                                                                  W, F_THRESHOLD, MAX_ITERATIONS, refH,
                                                                  refW, myKernel['k'], myKernel['kx'], myKernel['ky'])
