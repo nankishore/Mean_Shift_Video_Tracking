@@ -7,4 +7,6 @@ Steps for execution -
 3. Chose the desired kernel properties for density estimation.
 4. The algorithm will track the selected feature over the frames and sequence them back into a video file.
 
+Please use Mean_Shift_Video_Tracking_OpenCV_2.9.py to be used with version OpenCV 2.9.* versions.
+
 Demo - https://www.youtube.com/watch?v=1NH3HhjyYy4 and https://www.youtube.com/watch?v=BNsreEEGC1s
